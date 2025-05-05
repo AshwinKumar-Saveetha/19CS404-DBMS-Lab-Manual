@@ -45,6 +45,7 @@ select * from orders where salesman_id in (select salesman_id from salesman wher
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/19d238ca-9c30-4997-9059-5c133735c949)
 
 **Question 2**
@@ -55,6 +56,7 @@ select * from customers where salary=1500;
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/141645bb-ef8e-42e1-9b04-dd6e5f0f7fc8)
 
 **Question 3**
@@ -66,6 +68,7 @@ select * from customer where city != (select city from customer where id=(select
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/c3cf9089-b2f8-4469-a8e4-e8867492951b)
 
 **Question 4**
@@ -76,6 +79,7 @@ select * from medications where dosage =(select min(dosage) from medications);
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/cd479340-e517-47cf-a1e7-3620b96ef718)
 
 **Question 5**
@@ -86,6 +90,7 @@ select commission from salesman where salesman_id in (select salesman_id from cu
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/0d7a9cc8-4c94-4d03-a2ad-f78734324e20)
 
 **Question 6**
@@ -98,6 +103,7 @@ select * from grades g1 where grade=(select min(grade) from grades g2 where g2.s
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/793804a3-06c3-4148-9d29-6bf725d137fb)
 
 **Question 7**
@@ -109,6 +115,7 @@ select * from orders where salesman_id in (select salesman_id from salesman wher
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/52cde73b-e250-4b87-8f74-68057600aebb)
 
 
@@ -121,6 +128,7 @@ select * from orders where purch_amt> (select avg(purch_amt) from orders where o
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/3d46d885-327e-4c56-b74c-ca1cd7c00ff5)
 
 **Question 9**
@@ -132,6 +140,7 @@ select * from customers where salary>4500;
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/9b77c25b-5d80-4c1c-af23-e675ba796d7e)
 
 **Question 10**
@@ -143,6 +152,7 @@ select * from customers where salary>1500;
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/50b4f796-2ba4-4a3f-bbf7-a99f9ebc1420)
 
 ## RESULT
