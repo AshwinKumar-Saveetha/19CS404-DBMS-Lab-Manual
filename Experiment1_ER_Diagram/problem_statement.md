@@ -48,5 +48,17 @@ InstructorID → Instructor(InstructorID)
 ClassroomID → Classroom(ClassroomID)
 Type: Composite Association
 
+## Extension – Prerequisite Modeling:
+Prerequisites can be added by introducing a recursive relationship on the Course entity:
+"PrerequisiteFor"
+CourseID → PrerequisiteCourseID
+Useful attributes: Type of prerequisite (compulsory/elective)
+
+## Design Choices Explanation:
+The model clearly separates core academic entities such as Student, Instructor, Course, Department, and Classroom.
+Use of Enrollment and Schedule as associative entities ensures normalization and supports M:N relationships effectively.
+The use of attributes like EnrollDate, Grade, and ScheduleID within relationships shows a thoughtful mapping of transactional aspects.
+The design is modular, scalable, and easily supports queries related to student progress, scheduling, and faculty management.
+
 ## RESULT:
 Thus, we have created an E-R Diagram for the chosen scenario successfully, defining the necessary entities, attributes, relationships, and constraints.
