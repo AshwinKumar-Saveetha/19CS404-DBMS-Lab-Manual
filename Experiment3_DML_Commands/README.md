@@ -49,7 +49,9 @@ SELECT column1, column2 FROM table_name WHERE condition;
 **Question 1**
 ---
 ```
-Write a SQL query to retrieve all orders where the purchase amount is between 500 and 4000 but exclude orders with purchase amounts of 948.50 and 1983.43. The query should return the columns: ord_no, purch_amt, ord_date, customer_id, and salesman_id.
+Write a SQL query to retrieve all orders where the purchase amount is between 500 and 4000 but exclude orders with
+purchase amounts of 948.50 and 1983.43. The query should return the columns: ord_no, purch_amt, ord_date, customer_id,
+and salesman_id.
 
 Table: orders
 
@@ -80,7 +82,8 @@ where purch_amt between 500 and 4000 and purch_amt NOT IN (948.50,1983.43);
 **Question 2**
 ---
 ```
-Write a SQL statement to Change the supplier name to 'A1 Suppliers' where the supplier ID is 8 in the suppliers table.
+Write a SQL statement to Change the supplier name to 'A1 Suppliers' where the supplier ID is 8 in the suppliers
+table.
 
 Table info
 
@@ -108,7 +111,8 @@ where supplier_id=8;
 **Question 3**
 ---
 ```
-Write a SQL query to reduce the reorder level by 30% where cost price is more than 50 and quantity in stock is less than 100 in the products table.
+Write a SQL query to reduce the reorder level by 30% where cost price is more than 50 and quantity in stock is
+less than 100 in the products table.
 
 Products Table 
 
@@ -242,7 +246,8 @@ where Surgery_ID = 3;
 **Question 7**
 --
 ```
-Write a SQL statement to change salary of employee to 8000 whose Employee ID is 105, if the existing salary is less than 5000.
+Write a SQL statement to change salary of employee to 8000 whose Employee ID is 105, if the existing salary
+is less than 5000.
 
 Employees table
 
@@ -279,7 +284,8 @@ where employee_id=105 and salary <5000;
 **Question 8**
 ---
 ```
-Write a SQL query to determine the age group of value1 in the Calculations table as 'Child' if it is less than 13, 'Teen' if it is between 13 and 19, and 'Adult' if it is 20 or older.
+Write a SQL query to determine the age group of value1 in the Calculations table as 'Child' if it is less than 13,
+'Teen' if it is between 13 and 19, and 'Adult' if it is 20 or older.
 
 cid         name        type        notnull     dflt_value  pk
 ----------  ----------  ----------  ----------  ----------  ----------
