@@ -1,46 +1,52 @@
 # Experiment 1: Entity-Relationship (ER) Diagram
+```
+Name: Ashwin Kumar A
+Reg No: 212223040021
+```
+## Scenario Chosen:
+University
 
-## 🎯 Objective:
-To understand and apply the concepts of ER modeling by creating an ER diagram for a real-world application.
+## ER Diagram:
 
-## 📚 Purpose:
-The purpose of this workshop is to gain hands-on experience in designing ER diagrams that visually represent the structure of a database including entities, relationships, attributes, and constraints.
+![image](https://github.com/user-attachments/assets/857b180d-fac1-4c37-aa70-56f603c23671)
 
----
+## Entities and Attributes:
+### Student:
+Attributes: StudentID (PK), Name, Gender, DOB, Email, Phone, Address
+### Instructor:
+Attributes: InstructorID (PK), Name, Phone, Email
+### Department:
+Attributes: DepartmentID (PK), Department Name, Head of Department (FK → Instructor.InstructorID)
+### Course:
+Attributes: CourseID (PK), Course Name, Credits, DepartmentID (FK → Department.DepartmentID)
+### Enrollment:
+Attributes: EnrollmentID (PK), EnrollmentDate, Grade, StudentID (FK → Student.StudentID), CourseID (FK → Course.CourseID)
+### Schedule:
+Attributes: ScheduleID (PK), Day, Time, CourseID (FK → Course.CourseID), InstructorID (FK → Instructor.InstructorID), ClassroomID (FK → Classroom.ClassroomID)
+### Classroom:
+Attributes: ClassroomID (PK), Building, Room Number, Capacity
 
-## 🧪 Choose One Scenario:
+## Relationships and Constraints:
+### Enrollment (EnrollmentID, StudentID, CourseID)
+PK: EnrollmentID
+FKs:
+StudentID → Student(StudentID)
+CourseID → Course(CourseID)
+Type: Many-to-Many (via associative entity)
+### Course (CourseID, DepartmentID)
+PK: CourseID
+FK: DepartmentID → Department(DepartmentID)
+Type: Many-to-One
+### Instructor (InstructorID, CourseID) (via Schedule or a separate junction table)
+PK: InstructorID
+Relationship Type: Many-to-Many
+### Schedule (ScheduleID, CourseID, ClassroomID, InstructorID)
+PK: ScheduleID
+FKs:
+CourseID → Course(CourseID)
+InstructorID → Instructor(InstructorID)
+ClassroomID → Classroom(ClassroomID)
+Type: Composite Association
 
-### 🔹 Scenario 1: University Database
-Design a database to manage students, instructors, programs, courses, and student enrollments. Include prerequisites for courses.
-
-**User Requirements:**
-- Academic programs grouped under departments.
-- Students have admission number, name, DOB, contact info.
-- Instructors with staff number, contact info, etc.
-- Courses have number, name, credits.
-- Track course enrollments by students and enrollment date.
-- Add support for prerequisites (some courses require others).
-
----
-
-### 🔹 Scenario 2: Hospital Database
-Design a database for patient management, appointments, medical records, and billing.
-
-**User Requirements:**
-- Patient details including contact and insurance.
-- Doctors and their departments, contact info, specialization.
-- Appointments with reason, time, patient-doctor link.
-- Medical records with treatments, diagnosis, test results.
-- Billing and payment details for each appointment.
-
----
-
-## 📝 Tasks:
-1. Identify entities, relationships, and attributes.
-2. Draw the ER diagram using any tool (draw.io, dbdiagram.io, hand-drawn and scanned).
-3. Include:
-   - Cardinality & participation constraints
-   - Prerequisites for University OR Billing for Hospital
-4. Explain:
-   - Why you chose the entities and relationships.
-   - How you modeled prerequisites or billing.
+## RESULT:
+Thus, we have created an E-R Diagram for the chosen scenario successfully, defining the necessary entities, attributes, relationships, and constraints.
