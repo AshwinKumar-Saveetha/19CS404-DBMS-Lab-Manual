@@ -117,7 +117,7 @@ max_salary NULL);
 ```
 
 **Output:**
-![image](https://github.com/user-attachments/assets/eff71fa6-f416-454c-965e-fb4186b48fbf)
+![image](https://github.com/user-attachments/assets/9a4878d2-e59f-498e-8daf-37ea3fad778f)
 
 
 **Question 2**
@@ -146,8 +146,6 @@ SELECT ProductID,ProductName,Price,Stock FROM Discontinued_products;
 **Output:**
 ![image](https://github.com/user-attachments/assets/eff71fa6-f416-454c-965e-fb4186b48fbf)
 
-**Output:**
-![image](https://github.com/user-attachments/assets/9a4878d2-e59f-498e-8daf-37ea3fad778f)
 
 
 **Question 4**
