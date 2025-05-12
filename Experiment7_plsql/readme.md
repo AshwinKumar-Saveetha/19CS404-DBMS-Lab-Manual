@@ -50,7 +50,7 @@ BEGIN
 END;
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/1bc3a150-941a-4fd4-9808-819ff732fd15)
+![image](https://github.com/user-attachments/assets/0cd334fd-ebf0-450f-8af5-dcd6b49fc889)
 
 ## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
 
@@ -80,7 +80,7 @@ BEGIN
 END;
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/f7bc37f8-0155-4ee2-ba78-2873aed05fa3)
+![image](https://github.com/user-attachments/assets/c2e350c0-e486-41d4-8a23-375cea5f3487)
 
 ## 3. Write a PL/SQL program to generate Fibonacci series
 
@@ -118,7 +118,7 @@ BEGIN
 END;
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/27d45d8b-1201-45a8-b6c8-eabb7e9c0594)
+![image](https://github.com/user-attachments/assets/baf61b61-b0ca-4dbb-94e4-f4eebf12a008)
 
 ## 4. Write a PL/SQL Program to display the number in Reverse Order
 
