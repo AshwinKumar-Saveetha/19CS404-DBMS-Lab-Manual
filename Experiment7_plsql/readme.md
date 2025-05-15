@@ -151,7 +151,8 @@ BEGIN
 END;
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/3196f759-ca57-493d-888a-d3d2f4904635)
+![image](https://github.com/user-attachments/assets/9e426b3e-40f1-4622-acd9-f7b9c0577325)
+
 
 ## 5. Write a PL/SQL program to find the largest of three numbers
 
@@ -186,7 +187,7 @@ BEGIN
 END;
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/101333eb-64a2-4a7c-9a20-3708e49e2d7a)
+![image](https://github.com/user-attachments/assets/4be68dc2-2780-461e-9e0c-0a2c17e38c52)
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
