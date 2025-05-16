@@ -1,7 +1,7 @@
 # Experiment 7: PL/SQL – Variables, Control Structures and Loops
 ### NAME : Ashwin Kumar A
 ### REG NO : 212223040021
-### DATE : 12-05-2025
+### DATE : 21-04-2025
 ## AIM
 To write and execute simple PL/SQL programs using variables, loops, and conditional statements.
 
